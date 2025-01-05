@@ -1,0 +1,23 @@
+mutation CreateUserMutation($data: ICreateUser!) {
+  createUser(data: $data) {
+    success
+    msg
+    data
+  }
+}
+
+mutation ConfirmUserMutation($userId: Float!) {
+  confirmUser(userId: $userId) {
+    success
+    msg
+    data
+  }
+}
+
+mutation AuthAdminUser($data: IAuthUser!) {
+  authAdminUser(data: $data) {
+    success
+    msg
+    data
+  }
+}
